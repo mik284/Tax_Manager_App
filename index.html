@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Natujenge</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light background">
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo.svg" class="logo" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse links" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">HOME </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Article</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Team</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="card text-black bgtwo">
+      <button type="button" class="btn manager">Tax Manager</button>
+      <div class="card-img-overlay three">
+        <h5 class="card-title">
+          <span class="title1">TAX DEDUCTIONS</span
+          ><span class="title2">Amount/Total</span>
+        </h5>
+        <div class="card-text">
+          <article class="item">
+            <p>
+              <label class="first">Net Pay:</label>
+              <input
+                class="ksh"
+                name="net"
+                type="text"
+                placeholder="Ksh."
+              />
+            </p>
+          </article>
+          <article class="item">
+            <p>
+              <label>Gross Salary:</label>
+              <input
+                class="ksh"
+                name="gross"
+                type="text"
+                placeholder="Ksh."
+              />
+            </p>
+          </article>
+          <article class="item">
+            <p>
+              <label>NSSF Contribution:</label>
+              <input
+                class="ksh"
+                name="nssf"
+                type="text"
+                placeholder="Ksh."
+              />
+            </p>
+          </article>
+          <article class="item">
+            <p>
+              <label>Taxable Income:</label>
+              <input
+                class="ksh"
+                name="taxable"
+                type="text"
+                placeholder="Ksh."
+              />
+            </p>
+          </article>
+          <article class="item">
+            <p>
+              <label>Tax Before Relief:</label>
+              <input
+                class="ksh"
+                name="before"
+                type="text"
+                placeholder="Ksh."
+              />
+            </p>
+          </article>
+          <article class="item">
+            <p>
+              <label>Insurance/NHIF Relief:</label>
+              <input
+                class="ksh"
+                name="insurance"
+                type="text"
+                placeholder="Ksh."
+              />
+            </p>
+          </article>
+          <article class="item">
+            <p>
+              <label>PAYE:</label>
+              <input
+                class="ksh"
+                name="paye"
+                type="text"
+                placeholder="Ksh."
+              />
+            </p>
+          </article>
+          <article class="item">
+            <p>
+              <label>NHIF Contribution:</label>
+              <input
+                class="ksh"
+                name="nhif"
+                type="text"
+                placeholder="Ksh."
+              />
+            </p>
+          </article>
+        </div>
+      </div>
+      <div class="buttons">
+        <button type="button" class="btn1">Apply Now</button>
+        <button type="button" class="btn2">Bill Manager</button>
+
+      </div>
+    </div>
+    <footer>
+        <div class="footer1">
+        <img src="./images/logo.svg" class="logo2" alt="logo" />
+        <div class="footer2">
+            <span class="footer2-one">Natujenge BootCamp</span>
+            <span class="footer2-two">All Rights Reserved &copy; 2022</span>
+        </div>
+
+        </div>
+    </footer>
+  </body>
+</html>
