@@ -11,9 +11,13 @@
   margin-right: auto;
   margin-top: 40px;
   background-color: #d9d9d9 !important;
+  position: relative;
 }
 .three {
   margin-top: 50px;
+}
+.second{
+  margin-top: 20px;
 }
 label {
   padding-left: 100px;
@@ -23,6 +27,43 @@ label {
 .ksh {
   margin-right: 300px;
   float: right;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #d9d9d9;
+  color: #000;
+}
+
+.ksh2 {
+  margin-left: 100px;
+  float: left;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #d9d9d9;
+}
+.add {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.add-btn {
+  background-color: #1cb484;
+  width: 10%;
+  margin-top: 20px;
+  position: absolute;
+  right: 35%;
+  bottom: 40%;
+
+  padding: 5px;
+  border-radius: 20px !important;
+  text-transform: uppercase;
+  font-weight: 700 !important;
+}
+.balance {
+  position: absolute;
+  bottom: 25%;
+}
+.kshbalance {
+  margin-left: 330px;
   border: 1px solid black;
   border-radius: 20px;
   background-color: #d9d9d9;
@@ -85,50 +126,175 @@ label {
 .buttons {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  margin-top: 70vh;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 .btn1 {
   background-color: #fff;
   border-radius: 20px;
   padding: 5px;
-  width: 30%;
+  width: 20%;
   text-transform: uppercase;
   font-weight: 700;
   border: 1px solid white;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.btn1:hover {
+  cursor: pointer;
+  background-color: lightgreen;
 }
 .btn2 {
   background-color: #fff;
   border-radius: 20px;
   padding: 5px;
-  width: 30%;
+  width: 20%;
   text-transform: uppercase;
   font-weight: 700;
   border: 1px solid white;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.btn2:hover {
+  cursor: pointer;
+  background-color: lightgreen;
+}
+/**tabs*/
+
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+}
+.btnz1 {
+  background-color: #1cb484;
+  width: 20%;
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 20px !important;
+  text-transform: uppercase;
+  font-weight: 500 !important;
+}
+.btnz1:hover {
+  cursor: pointer;
+}
+.btnz2 {
+  background-color: #1cb484;
+  width: 20%;
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 20px !important;
+  text-transform: uppercase;
+  font-weight: 500 !important;
+  margin-left: 10px;
+}
+.btnz2:hover {
+  cursor: pointer;
+}
+.btn {
+  background-color: #1cb484;
+  width: 48%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  border-radius: 20px !important;
+  text-transform: uppercase;
+  font-weight: 700 !important;
+}
+.buttons2 {
+  position: absolute;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.btn:hover {
+  background-color: white;
+}
+
+.btn.active {
+  background-color: lightgreen;
+}
+.btnz.active {
+  background-color: lightgreen;
+}
+
+.content.active {
+  padding: 2rem;
+  display: block;
+}
+
+.content {
+  display: none;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
- .card-title{
-display: flex;
-justify-content: center;
-align-items: center;
- }
- .bgtwo{
-  position: relative;
-  height: 120vh;
- }
- .buttons{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  margin-bottom: 20px;
- }
- .title2{
-  margin-left: 20px
- }
+  .card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bgtwo {
+    position: relative;
+    height: 130vh;
+  }
+  .buttons {
+    position: absolute;
+    bottom: 0;
+    
+  
+  }
+  .btn1{
+    width: 50%;
+  }
+  .btn2{
+    width: 50%;
+    margin-left: 10px;
+  }
+  .title2 {
+    margin-left: 20px;
+  }
+  .ksh{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    float: none;
+  }
+  .ksh2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0px;
+    float: none;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #d9d9d9;
+    color: #000;
+    margin-left: 0;
+    margin-top: 15px;
+   }
+   .add-btn{
+    margin-left: 0px;
+    width: 20%;
+    left: 3%;
+    bottom: 20%;
+   }
+   .balance{
+    bottom: 10%;
+    left: -13%;
+    margin-left: 0;
+   }
+   .kshbalance{
+    margin-left: 0;
+   }
 }
-
-
 
 @media (min-width: 0px) and (max-width: 425px) {
   .logo {
@@ -150,7 +316,26 @@ align-items: center;
   .three {
     margin-top: 0px;
   }
-
+ .ksh2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0px;
+  float: none;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #d9d9d9;
+  color: #000;
+  margin-left: 0;
+  margin-top: 15px;
+ }
+ .add-btn{
+  margin-left: 0px;
+  width: 65%;
+  right: 30%;
+  bottom: 25%;
+ }
   .manager {
     width: 50%;
     margin-top: 5px;
@@ -166,7 +351,20 @@ align-items: center;
   label {
     padding-left: 0px;
   }
-
+  .btnz1{
+    margin-left: 0px;
+    width: 50%;
+  }
+  .btnz2{
+    margin-left: 0px;
+    width: 50%;
+  }
+ .balance{
+  bottom: 15%;
+ }
+ .kshbalance{
+  margin-left: 0;
+ }
   .ksh {
     display: flex;
     flex-direction: column;
@@ -192,20 +390,22 @@ align-items: center;
     background-color: #fff;
     border-radius: 20px;
     padding: 5px;
-    width: 30%;
+    width: 50%;
     text-transform: uppercase;
     font-weight: 700;
     border: 1px solid white;
+    
   }
   .btn2 {
     background-color: #fff;
     border-radius: 20px;
     padding: 5px;
-    width: 50%;
+    width: 80%;
     text-transform: uppercase;
     font-weight: 700;
     border: 1px solid white;
     margin-left: 10px;
+   
   }
   .footer1 {
     display: flex;

@@ -12,6 +12,7 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <link rel="icon" type="image/x-icon" href="./images/logo.svg" />
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -61,119 +62,230 @@
       </nav>
     </header>
 
-    <div class="card text-black bgtwo">
-      <button type="button" class="btn manager">Tax Manager</button>
-      <div class="card-img-overlay three">
-        <h5 class="card-title">
-          <span class="title1">TAX DEDUCTIONS</span
-          ><span class="title2">Amount/Total</span>
-        </h5>
-        <div class="card-text">
-          <article class="item">
-            <p>
-              <label class="first">Net Pay:</label>
-              <input
-                class="ksh"
-                name="net"
-                type="text"
-                placeholder="Ksh."
-              />
-            </p>
-          </article>
-          <article class="item">
-            <p>
-              <label>Gross Salary:</label>
-              <input
-                class="ksh"
-                name="gross"
-                type="text"
-                placeholder="Ksh."
-              />
-            </p>
-          </article>
-          <article class="item">
-            <p>
-              <label>NSSF Contribution:</label>
-              <input
-                class="ksh"
-                name="nssf"
-                type="text"
-                placeholder="Ksh."
-              />
-            </p>
-          </article>
-          <article class="item">
-            <p>
-              <label>Taxable Income:</label>
-              <input
-                class="ksh"
-                name="taxable"
-                type="text"
-                placeholder="Ksh."
-              />
-            </p>
-          </article>
-          <article class="item">
-            <p>
-              <label>Tax Before Relief:</label>
-              <input
-                class="ksh"
-                name="before"
-                type="text"
-                placeholder="Ksh."
-              />
-            </p>
-          </article>
-          <article class="item">
-            <p>
-              <label>Insurance/NHIF Relief:</label>
-              <input
-                class="ksh"
-                name="insurance"
-                type="text"
-                placeholder="Ksh."
-              />
-            </p>
-          </article>
-          <article class="item">
-            <p>
-              <label>PAYE:</label>
-              <input
-                class="ksh"
-                name="paye"
-                type="text"
-                placeholder="Ksh."
-              />
-            </p>
-          </article>
-          <article class="item">
-            <p>
-              <label>NHIF Contribution:</label>
-              <input
-                class="ksh"
-                name="nhif"
-                type="text"
-                placeholder="Ksh."
-              />
-            </p>
-          </article>
-        </div>
-      </div>
-      <div class="buttons">
-        <button type="button" class="btn1">Apply Now</button>
-        <button type="button" class="btn2">Bill Manager</button>
-
+    <div class="tabs">
+      <div class="buttons2">
+        <button class="btnz btnz1 active" id="1">Tax Manager</button>
+        <button class="btnz btnz2" id="2">Bill Manager</button>
       </div>
     </div>
+    <div class="sections">
+      <div class="content content1 active">
+        <div class="card text-black bgtwo">
+          <button type="button" class="btn manager">Tax Manager</button>
+          <div class="card-img-overlay three">
+            <h5 class="card-title">
+              <span class="title1">TAX DEDUCTIONS</span
+              ><span class="title2">Amount/Total</span>
+            </h5>
+            <div class="card-text">
+              <article class="item">
+                <p>
+                  <label class="first">Gross Salary:</label>
+                  <input
+                    class="ksh"
+                    name="gross"
+                    type="text"
+                    placeholder="Ksh."
+                  />
+                </p>
+              </article>
+              <article class="item">
+                <p>
+                  <label >Net Pay:</label>
+                  <input
+                    class="ksh"
+                    name="net"
+                    type="text"
+                    placeholder="Ksh."
+                  />
+                </p>
+              </article>
+
+              <article class="item">
+                <p>
+                  <label>NSSF Contribution:</label>
+                  <input
+                    class="ksh"
+                    name="nssf"
+                    type="text"
+                    placeholder="Ksh."
+                  />
+                </p>
+              </article>
+              <article class="item">
+                <p>
+                  <label>Taxable Income:</label>
+                  <input
+                    class="ksh"
+                    name="taxable"
+                    type="text"
+                    placeholder="Ksh."
+                  />
+                </p>
+              </article>
+              <article class="item">
+                <p>
+                  <label>Tax Before Relief:</label>
+                  <input
+                    class="ksh"
+                    name="before"
+                    type="text"
+                    placeholder="Ksh."
+                  />
+                </p>
+              </article>
+              <article class="item">
+                <p>
+                  <label>Insurance/NHIF Relief:</label>
+                  <input
+                    class="ksh"
+                    name="insurance"
+                    type="text"
+                    placeholder="Ksh."
+                  />
+                </p>
+              </article>
+              <article class="item">
+                <p>
+                  <label>PAYE:</label>
+                  <input
+                    class="ksh"
+                    name="paye"
+                    type="text"
+                    placeholder="Ksh."
+                  />
+                </p>
+              </article>
+              <article class="item">
+                <p>
+                  <label>NHIF Contribution:</label>
+                  <input
+                    class="ksh"
+                    name="nhif"
+                    type="text"
+                    placeholder="Ksh."
+                  />
+                </p>
+              </article>
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="btn1">Apply Now</button>
+            <button class="btn2" id="2">Bill Manager</button>
+          </div>
+        </div>
+      </div>
+      <div class="content content2">
+        <div class="card text-black bgtwo">
+          <button type="button" class="btn manager">Bill Manager</button>
+          <div class="card-img-overlay three">
+            <div class="card-text">
+              <article class="item">
+                <p>
+                  <label class="second">Net Pay:</label>
+                  <input
+                    class="ksh"
+                    name="net"
+                    type="text"
+                    placeholder="Ksh."
+                  />
+                </p>
+              </article>
+
+              <article class="item">
+                <p>
+                  <label>Rent:</label>
+                  <input
+                    class="ksh"
+                    name="rent"
+                    type="text"
+                    placeholder="Ksh."
+                  />
+                </p>
+              </article>
+              <article class="item">
+                <p>
+                  <label>Entertainment:</label>
+                  <input
+                    class="ksh"
+                    name="entertainment"
+                    type="text"
+                    placeholder="Ksh."
+                  />
+                </p>
+              </article>
+              <article class="item">
+                <p>
+                  <label>Food:</label>
+                  <input
+                    class="ksh"
+                    name="food"
+                    type="text"
+                    placeholder="Ksh."
+                  />
+                </p>
+              </article>
+              <article class="item">
+                <p>
+                  <label>Shopping:</label>
+                  <input
+                    class="ksh"
+                    name="shopping"
+                    type="text"
+                    placeholder="Ksh."
+                  />
+                </p>
+              </article>
+              <div class="add">
+                <article class="item">
+                  <p>
+                    <input
+                      class="ksh"
+                      name="new"
+                      type="text"
+                      placeholder="Price"
+                    />
+                    <input
+                      class="ksh2"
+                      name="new"
+                      type="text"
+                      placeholder="Bill"
+                    />
+                  </p>
+                </article>
+
+                <button class="add-btn">Add</button>
+              </div>
+              <article class="item balance">
+                <p>
+                  <label>Balance:</label>
+                  <input
+                    class="kshbalance"
+                    name="balance"
+                    type="text"
+                    placeholder="Ksh."
+                  />
+                </p>
+              </article>
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="btn1">Apply Now</button>
+            <button class="btn2" id="1">Tax Manager</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer>
-        <div class="footer1">
+      <div class="footer1">
         <img src="./images/logo.svg" class="logo2" alt="logo" />
         <div class="footer2">
-            <span class="footer2-one">Natujenge BootCamp</span>
-            <span class="footer2-two">All Rights Reserved &copy; 2022</span>
+          <span class="footer2-one">Natujenge BootCamp</span>
+          <span class="footer2-two">All Rights Reserved &copy; 2022</span>
         </div>
-
-        </div>
+      </div>
     </footer>
   </body>
+  <script src="./tabs.js"></script>
 </html>
