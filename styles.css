@@ -293,8 +293,7 @@ button.inactive {
     margin-left: 0;
     margin-top: 15px;
   }
-  .add-btn {
-  }
+
   .balance {
     bottom: 10%;
     left: -13%;
@@ -338,8 +337,6 @@ button.inactive {
     color: #000;
     margin-left: 0;
     margin-top: 15px;
-  }
-  .add-btn {
   }
   .manager {
     width: 50%;
