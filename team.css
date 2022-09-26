@@ -1,0 +1,42 @@
+ .team-title {
+     position: absolute;
+     width: 347px;
+     height: 39px;
+     left: 456px;
+     top: 103px;
+
+     font-family: 'Inter';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 25px;
+     line-height: 39px;
+     /* identical to box height */
+
+     text-align: center;
+     letter-spacing: 0.14em;
+     text-decoration-line: underline;
+
+     color: #1CB484;
+ }
+
+ .team-p-tag {
+     position: absolute;
+     width: 1012px;
+     height: 39px;
+     left: 199px;
+     top: 171px;
+
+     font-family: 'Inter';
+     font-style: normal;
+     font-weight: 300;
+     font-size: 20px;
+     line-height: 39px;
+     /* identical to box height */
+
+     text-align: center;
+     letter-spacing: 0.015em;
+
+     color: #000000;
+ }
+
+ 

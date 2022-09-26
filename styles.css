@@ -1,9 +1,11 @@
 .logo {
   width: 45%;
 }
+
 .background {
   background-color: #d9d9d9;
 }
+
 .bgtwo {
   height: 100vh;
   width: 75vw;
@@ -13,17 +15,21 @@
   background-color: #d9d9d9 !important;
   position: relative;
 }
+
 .three {
   margin-top: 50px;
 }
+
 .second {
   margin-top: 20px;
 }
+
 label {
   padding-left: 100px;
   text-align: left;
   font-weight: 700;
 }
+
 .ksh {
   margin-right: 300px;
   float: right;
@@ -40,11 +46,13 @@ label {
   border-radius: 20px;
   background-color: #d9d9d9;
 }
+
 .add {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 .btn-add {
   background-color: #1cb484;
   width: 10%;
@@ -55,9 +63,11 @@ label {
   text-transform: uppercase;
   font-weight: 700 !important;
 }
+
 .hidden {
   display: none;
 }
+
 .new {
   padding-left: 100px;
   text-align: left;
@@ -72,6 +82,7 @@ label {
   position: absolute;
   bottom: 25%;
 }
+
 .kshbalance {
   margin-left: 330px;
   border: 1px solid black;
@@ -79,11 +90,14 @@ label {
   background-color: #d9d9d9;
   color: #000;
 }
+
 ::placeholder {
   color: #000;
   font-weight: 700;
-  opacity: 1; /* Firefox */
+  opacity: 1;
+  /* Firefox */
 }
+
 .manager {
   background-color: #1cb484;
   width: 30%;
@@ -95,29 +109,36 @@ label {
   text-transform: uppercase;
   font-weight: 700 !important;
 }
+
 .card-title {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin-left: -200px;
 }
+
 .title1 {
   text-align: left;
 }
+
 .title2 {
   text-align: right;
 }
+
 .links {
   display: flex;
   justify-content: flex-end;
 }
+
 .nav-item {
   padding: 0 25px;
   font-weight: bold;
 }
+
 .logo2 {
   width: 20%;
 }
+
 .footer1 {
   display: flex;
   flex-direction: row;
@@ -128,11 +149,13 @@ label {
   margin-top: 30px;
   font-weight: 700;
 }
+
 .footer2 {
   display: flex;
   flex-direction: column;
   padding-left: 200px;
 }
+
 .buttons {
   display: flex;
   flex-direction: row;
@@ -142,6 +165,7 @@ label {
   bottom: 0;
   width: 100%;
 }
+
 .btn1 {
   background-color: #fff;
   border-radius: 20px;
@@ -153,10 +177,12 @@ label {
   margin-bottom: 20px;
   margin-left: 20px;
 }
+
 .btn1:hover {
   cursor: pointer;
   background-color: lightgreen;
 }
+
 .btn2 {
   background-color: #fff;
   border-radius: 20px;
@@ -168,10 +194,12 @@ label {
   margin-bottom: 20px;
   margin-right: 20px;
 }
+
 .btn2:hover {
   cursor: pointer;
   background-color: lightgreen;
 }
+
 /**tabs*/
 
 .tabs {
@@ -179,6 +207,7 @@ label {
   grid-template-columns: repeat(3, 1fr);
   position: relative;
 }
+
 .btnz1 {
   background-color: #1cb484;
   width: 20%;
@@ -188,9 +217,11 @@ label {
   text-transform: uppercase;
   font-weight: 500 !important;
 }
+
 .btnz1:hover {
   cursor: pointer;
 }
+
 .btnz2 {
   background-color: #1cb484;
   width: 20%;
@@ -201,9 +232,11 @@ label {
   font-weight: 500 !important;
   margin-left: 10px;
 }
+
 .btnz2:hover {
   cursor: pointer;
 }
+
 .btn {
   background-color: #1cb484;
   width: 48%;
@@ -215,6 +248,7 @@ label {
   text-transform: uppercase;
   font-weight: 700 !important;
 }
+
 .buttons2 {
   position: absolute;
 
@@ -224,6 +258,7 @@ label {
   align-items: center;
   width: 100%;
 }
+
 .btn:hover {
   background-color: white;
 }
@@ -231,6 +266,7 @@ label {
 .btn.active {
   background-color: #1cb484;
 }
+
 .btnz.active {
   background-color: #1cb484;
 }
@@ -247,30 +283,37 @@ button.inactive {
 .content {
   display: none;
 }
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .card-title {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .bgtwo {
     position: relative;
     height: 130vh;
   }
+
   .buttons {
     position: absolute;
     bottom: 0;
   }
+
   .btn1 {
     width: 50%;
   }
+
   .btn2 {
     width: 50%;
     margin-left: 10px;
   }
+
   .title2 {
     margin-left: 20px;
   }
+
   .ksh {
     display: flex;
     flex-direction: column;
@@ -299,6 +342,7 @@ button.inactive {
     left: -13%;
     margin-left: 0;
   }
+
   .kshbalance {
     margin-left: 0;
   }
@@ -308,9 +352,11 @@ button.inactive {
   .logo {
     width: 50%;
   }
+
   .logo2 {
     width: 30%;
   }
+
   .bgtwo {
     width: 100%;
     overflow-x: hidden;
@@ -318,12 +364,15 @@ button.inactive {
     height: 120vh;
     position: relative;
   }
+
   .first {
     margin-top: 10px;
   }
+
   .three {
     margin-top: 0px;
   }
+
   .ksh2 {
     display: flex;
     flex-direction: column;
@@ -338,6 +387,7 @@ button.inactive {
     margin-left: 0;
     margin-top: 15px;
   }
+
   .manager {
     width: 50%;
     margin-top: 5px;
@@ -347,26 +397,33 @@ button.inactive {
   .title1 {
     display: none;
   }
+
   .title2 {
     display: none;
   }
+
   label {
     padding-left: 0px;
   }
+
   .btnz1 {
     margin-left: 0px;
     width: 50%;
   }
+
   .btnz2 {
     margin-left: 0px;
     width: 50%;
   }
+
   .balance {
     bottom: 15%;
   }
+
   .kshbalance {
     margin-left: 0;
   }
+
   .ksh {
     display: flex;
     flex-direction: column;
@@ -379,6 +436,7 @@ button.inactive {
     background-color: #d9d9d9;
     color: #000;
   }
+
   .buttons {
     display: flex;
     flex-direction: row;
@@ -388,6 +446,7 @@ button.inactive {
     position: absolute;
     bottom: 0;
   }
+
   .btn1 {
     background-color: #fff;
     border-radius: 20px;
@@ -397,6 +456,7 @@ button.inactive {
     font-weight: 700;
     border: 1px solid white;
   }
+
   .btn2 {
     background-color: #fff;
     border-radius: 20px;
@@ -417,6 +477,7 @@ button.inactive {
     margin-top: 10px;
     font-weight: 700;
   }
+
   .footer2 {
     padding-left: 0px;
     margin-left: -100px;
