@@ -1,9 +1,5 @@
  .team-title {
-     position: absolute;
-     width: 347px;
-     height: 39px;
-     left: 456px;
-     top: 103px;
+     
      font-family: 'Inter';
      font-style: normal;
      font-weight: 700;
@@ -13,16 +9,12 @@
      text-align: center;
      letter-spacing: 0.14em;
      text-decoration-line: underline;
-
+    
      color: #1CB484;
  }
 
  .team-p-tag {
-     position: absolute;
-     width: 1012px;
-     height: 39px;
-     left: 199px;
-     top: 171px;
+    
      margin: auto;
      font-family: 'Inter';
      font-style: normal;
@@ -46,9 +38,12 @@
      min-height: 100%;
      margin: 0px auto;
      margin-top: 10%;
-     overflow: hidden;
+     overflow-x: hidden;
+     position: relative;
  }
-
+.team-text{
+    width: 100%;
+}
  .card {
      min-width: 5em;
      min-height: 5em;
