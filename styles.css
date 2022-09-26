@@ -16,7 +16,7 @@
 .three {
   margin-top: 50px;
 }
-.second{
+.second {
   margin-top: 20px;
 }
 label {
@@ -45,19 +45,29 @@ label {
   flex-direction: column;
   justify-content: center;
 }
-.add-btn {
+.btn-add {
   background-color: #1cb484;
   width: 10%;
-  margin-top: 20px;
   position: absolute;
   right: 35%;
-  bottom: 40%;
-
   padding: 5px;
   border-radius: 20px !important;
   text-transform: uppercase;
   font-weight: 700 !important;
 }
+.hidden {
+  display: none;
+}
+.new {
+  padding-left: 100px;
+  text-align: left;
+  right: 35%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+  outline: none;
+}
+
 .balance {
   position: absolute;
   bottom: 25%;
@@ -219,10 +229,14 @@ label {
 }
 
 .btn.active {
-  background-color: lightgreen;
+  background-color: #1cb484;
 }
 .btnz.active {
-  background-color: lightgreen;
+  background-color: #1cb484;
+}
+
+button.inactive {
+  background-color: #aaa !important;
 }
 
 .content.active {
@@ -246,27 +260,26 @@ label {
   .buttons {
     position: absolute;
     bottom: 0;
-    
-  
   }
-  .btn1{
+  .btn1 {
     width: 50%;
   }
-  .btn2{
+  .btn2 {
     width: 50%;
     margin-left: 10px;
   }
   .title2 {
     margin-left: 20px;
   }
-  .ksh{
+  .ksh {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     float: none;
   }
-  .ksh2{
+
+  .ksh2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -279,21 +292,17 @@ label {
     color: #000;
     margin-left: 0;
     margin-top: 15px;
-   }
-   .add-btn{
-    margin-left: 0px;
-    width: 20%;
-    left: 3%;
-    bottom: 20%;
-   }
-   .balance{
+  }
+  .add-btn {
+  }
+  .balance {
     bottom: 10%;
     left: -13%;
     margin-left: 0;
-   }
-   .kshbalance{
+  }
+  .kshbalance {
     margin-left: 0;
-   }
+  }
 }
 
 @media (min-width: 0px) and (max-width: 425px) {
@@ -316,26 +325,22 @@ label {
   .three {
     margin-top: 0px;
   }
- .ksh2{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-right: 0px;
-  float: none;
-  border: 1px solid black;
-  border-radius: 20px;
-  background-color: #d9d9d9;
-  color: #000;
-  margin-left: 0;
-  margin-top: 15px;
- }
- .add-btn{
-  margin-left: 0px;
-  width: 65%;
-  right: 30%;
-  bottom: 25%;
- }
+  .ksh2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0px;
+    float: none;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #d9d9d9;
+    color: #000;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .add-btn {
+  }
   .manager {
     width: 50%;
     margin-top: 5px;
@@ -351,20 +356,20 @@ label {
   label {
     padding-left: 0px;
   }
-  .btnz1{
+  .btnz1 {
     margin-left: 0px;
     width: 50%;
   }
-  .btnz2{
+  .btnz2 {
     margin-left: 0px;
     width: 50%;
   }
- .balance{
-  bottom: 15%;
- }
- .kshbalance{
-  margin-left: 0;
- }
+  .balance {
+    bottom: 15%;
+  }
+  .kshbalance {
+    margin-left: 0;
+  }
   .ksh {
     display: flex;
     flex-direction: column;
@@ -394,7 +399,6 @@ label {
     text-transform: uppercase;
     font-weight: 700;
     border: 1px solid white;
-    
   }
   .btn2 {
     background-color: #fff;
@@ -405,7 +409,6 @@ label {
     font-weight: 700;
     border: 1px solid white;
     margin-left: 10px;
-   
   }
   .footer1 {
     display: flex;
