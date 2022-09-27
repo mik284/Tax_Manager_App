@@ -25,6 +25,26 @@ const calculateBill = document.querySelector('.calculate2');
 const billCategories = document.querySelector('.bill-cats')
 const newCategory = document.querySelector('.new-category')
 
+const resetFields = () => {
+  
+  grossSalary.value = '';
+  beforeRelief.value = '';
+  taxableIncome.value = '';
+  nhifContribution.value = '';
+  nssfContribution.value = '';
+  payeInput.value = '';
+  reliefInput.value = '';
+  netSalary.value = '';
+  netPay.value = ''
+
+  for (let el of billsEls) {
+    console.log(el)
+    el.value = ''
+  }
+}
+
+resetFields()
+
 const grossTax = () => {
   let gross = Number(grossSalary.value);
 
@@ -34,13 +54,13 @@ const grossTax = () => {
   let relief = paye * 0.15;
   let netPay = gross - nhif - nssf - (paye - relief);
 
-  beforeRelief.value = paye;
-  taxableIncome.value = gross;
-  nhifContribution.value = nhif;
-  nssfContribution.value = nssf;
-  payeInput.value = paye;
-  reliefInput.value = relief;
-  netSalary.value = netPay;
+  beforeRelief.value = paye.toFixed(2);;
+  taxableIncome.value = gross.toFixed(2);;
+  nhifContribution.value = nhif.toFixed(2);;
+  nssfContribution.value = nssf.toFixed(2);;
+  payeInput.value = paye.toFixed(2);
+  reliefInput.value = relief.toFixed(2);;
+  netSalary.value = netPay.toFixed(2);;
   console.log(gross);
 };
 
@@ -59,7 +79,7 @@ const bill = () => {
   }
 
   balancePlate.classList.remove('hidden');
-  balanceEl.textContent = balance;
+  balanceEl.textContent = balance.toFixed(2);
 };
 
 const taxManager = () => {
@@ -92,23 +112,21 @@ const addBill = () => {
     let html = `
       <article class="item">
         <p>
-          <label>${newCat}:</label>
+          <label>${newCat[0].toUpperCase() + newCat.slice(1).toLowerCase()}:</label>
           <input
             class="ksh bill"
-            name="newCat"
+            name="${newCat.toLowerCase()}"
             type="number"
             placeholder="Ksh." />
         </p>
       </article>
     `
 
-    console.log(billCategories.innerHTML)
     billCategories.insertAdjacentHTML('beforeend', html);
     newCategory.value = ''
   } else {
     console.log("Category is null")
   }
-
 
 };
 
