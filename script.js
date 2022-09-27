@@ -17,13 +17,14 @@ const netSalary = document.querySelector('#net');
 const calculateTax = document.querySelector('.calculate1');
 
 const netPay = document.querySelector('.net2');
-const billsEls = document.querySelectorAll('.bill');
 const balancePlate = document.querySelector('.balance-plate');
 const balanceEl = document.querySelector('.bal');
 const calculateBill = document.querySelector('.calculate2');
 
 const billCategories = document.querySelector('.bill-cats')
 const newCategory = document.querySelector('.new-category')
+let billsEls = document.querySelectorAll('.bill');
+
 
 const resetFields = () => {
   
@@ -65,6 +66,7 @@ const grossTax = () => {
 };
 
 const bill = () => {
+  billsEls = document.querySelectorAll('.bill')
   let available = Number(netPay.value);
   let bills = [...billsEls].map(it => Number(it.value));
   let balance = available;
