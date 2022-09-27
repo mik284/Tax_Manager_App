@@ -22,7 +22,8 @@ const balancePlate = document.querySelector('.balance-plate');
 const balanceEl = document.querySelector('.bal');
 const calculateBill = document.querySelector('.calculate2');
 
-const billCategories = document.querySelector('.bill-categories')
+const billCategories = document.querySelector('.bill-cats')
+const newCategory = document.querySelector('.new-category')
 
 const grossTax = () => {
   let gross = Number(grossSalary.value);
@@ -52,6 +53,7 @@ const bill = () => {
   console.log(totalBill)
 
   if (totalBill > available) {
+    console.log('Total bill exceeds net pay')
   } else {
     balance = available - totalBill;
   }
@@ -81,8 +83,33 @@ const billManager = () => {
 };
 
 const addBill = () => {
+  let newCat = newCategory.value;
+
   addDisp.classList.add('hidden');
   btnNew.classList.remove('hidden');
+  
+  if (newCat) {
+    let html = `
+      <article class="item">
+        <p>
+          <label>${newCat}:</label>
+          <input
+            class="ksh bill"
+            name="newCat"
+            type="number"
+            placeholder="Ksh." />
+        </p>
+      </article>
+    `
+
+    console.log(billCategories.innerHTML)
+    billCategories.insertAdjacentHTML('beforeend', html);
+    newCategory.value = ''
+  } else {
+    console.log("Category is null")
+  }
+
+
 };
 
 const newBill = () => {
