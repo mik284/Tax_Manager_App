@@ -80,6 +80,7 @@
                   <input
                     class="ksh"
                     name="gross"
+                    id="gross"
                     type="number"
                     placeholder="Ksh." />
                 </p>
@@ -90,6 +91,7 @@
                   <input
                     class="ksh"
                     name="net"
+                    id="net"
                     type="number"
                     placeholder="Ksh." />
                 </p>
@@ -101,6 +103,7 @@
                   <input
                     class="ksh"
                     name="nssf"
+                    id="nssf"
                     type="number"
                     placeholder="Ksh." />
                 </p>
@@ -112,6 +115,7 @@
                   <input
                     class="ksh"
                     name="taxable"
+                    id="taxable"
                     type="number"
                     placeholder="Ksh." />
                 </p>
@@ -123,6 +127,7 @@
                   <input
                     class="ksh"
                     name="before"
+                    id="tax-br"
                     type="number"
                     placeholder="Ksh." />
                 </p>
@@ -134,6 +139,7 @@
                   <input
                     class="ksh"
                     name="insurance"
+                    id="relief"
                     type="number"
                     placeholder="Ksh." />
                 </p>
@@ -144,6 +150,7 @@
                   <input
                     class="ksh"
                     name="paye"
+                    id="paye"
                     type="number"
                     placeholder="Ksh." />
                 </p>
@@ -154,6 +161,7 @@
                   <input
                     class="ksh"
                     name="nhif"
+                    id="nhif"
                     type="number"
                     placeholder="Ksh." />
                 </p>
@@ -161,8 +169,7 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="btn1">CALCULATE</button>
-            <p>NET SALARY: KES <span>1500</span>/=</p>
+            <button class="btn1 calculate1">CALCULATE</button>
           </div>
         </div>
       </div>
@@ -175,7 +182,7 @@
                 <p>
                   <label class="second">Net Pay:</label>
                   <input
-                    class="ksh"
+                    class="ksh net2"
                     name="net"
                     type="number"
                     placeholder="Ksh." />
@@ -186,7 +193,7 @@
                 <p>
                   <label>Food:</label>
                   <input
-                    class="ksh"
+                    class="ksh bill"
                     name="food"
                     type="number"
                     placeholder="Ksh." />
@@ -196,7 +203,7 @@
                 <p>
                   <label>Rent:</label>
                   <input
-                    class="ksh"
+                    class="ksh bill"
                     name="food"
                     type="number"
                     placeholder="Ksh." />
@@ -207,7 +214,7 @@
                 <p>
                   <label>Shopping:</label>
                   <input
-                    class="ksh"
+                    class="ksh bill"
                     name="shopping"
                     type="number"
                     placeholder="Ksh." />
@@ -226,8 +233,8 @@
           </div>
 
           <div class="buttons">
-            <button class="btn1">CALCULATE</button>
-            <p>Balance: Ksh <span>1500</span>/=</p>
+            <button class="btn1 calculate2">CALCULATE</button>
+            <span class="balance-plate hidden">Balance: <span class="bal" id="bal">1500</span>/=&nbsp;</span>
           </div>
         </div>
       </div>
