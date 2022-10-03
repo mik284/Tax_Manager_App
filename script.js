@@ -1,3 +1,4 @@
+// elements 
 const btnTaxManager = document.querySelector('.btnz1');
 const btnBillManager = document.querySelector('.btnz2');
 const taxManagerContent = document.querySelector('.content1');
@@ -108,6 +109,7 @@ const addBill = () => {
   addDisp.classList.add('hidden');
   btnNew.classList.remove('hidden');
   
+  // falseys: undefined !undefined
   if (newCat) {
     let html = `
       <article class="item">
@@ -123,9 +125,11 @@ const addBill = () => {
     `
 
     billCategories.insertAdjacentHTML('beforeend', html);
+
     newCategory.value = ''
   } else {
     console.log("Category is null")
+    // TODO 
   }
 
 };
@@ -135,10 +139,10 @@ const newBill = () => {
   addDisp.classList.remove('hidden');
 };
 
+// attach handers to functions
 btnTaxManager.addEventListener('click', taxManager);
 btnBillManager.addEventListener('click', billManager);
 btnAdd.addEventListener('click', addBill);
 btnNew.addEventListener('click', newBill);
-
 calculateTax.addEventListener('click', grossTax);
 calculateBill.addEventListener('click', bill);
