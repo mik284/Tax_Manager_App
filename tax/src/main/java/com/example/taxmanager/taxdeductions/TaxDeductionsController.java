@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 @RestController
 @RequestMapping(path = "api/v1/taxmanager")
+@CrossOrigin(origins = "http://localhost:4200")
 public class TaxDeductionsController {
 
     private final TaxDeductionsService taxDeductionsService;
